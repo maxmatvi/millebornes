@@ -7,4 +7,9 @@ public class Attaque extends Bataille {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return this.getType().getNomAttaque();
+	}
+
 }

@@ -7,4 +7,8 @@ public class Botte extends Probleme {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public String toString() {
+		return this.getType().getNomBotte();
+	}
+	
 }
