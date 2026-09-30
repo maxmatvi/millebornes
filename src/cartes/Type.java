@@ -1,7 +1,7 @@
 package cartes;
 
 public enum Type {
-    // Définition des constantes avec leurs 3 affichages (Attaque, Parade, Botte)
+    // Définition des constantes avec leurs 3 affichages
     FEU("Feu rouge", "Feu vert", "Prioritaire"),
     ESSENCE("Panne d'essence", "Essence", "Citerne"),
     CREVAISON("Crevaison", "Roue de secours", "Increvable"),
