@@ -12,7 +12,7 @@ public enum Type {
     private final String nomBotte;
 
     // Constructeur à 3 paramètres
-    Type(String nomAttaque, String nomParade, String nomBotte) {
+    private Type(String nomAttaque, String nomParade, String nomBotte) {
         this.nomAttaque = nomAttaque;
         this.nomParade = nomParade;
         this.nomBotte = nomBotte;

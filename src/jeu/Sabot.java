@@ -58,7 +58,6 @@ public class Sabot implements Iterable<Carte> {
 
         @Override
         public boolean hasNext() {
-            verifierModification();
             return this.curseur < nbCartes;
         }
 

@@ -10,5 +10,14 @@ public class Attaque extends Bataille {
 	public String toString() {
 		return this.getType().getNomAttaque();
 	}
+	
+	//TP3 Modif.:
+		@Override
+		public boolean equals(Object obj) {
+			if(obj instanceof Attaque attaque) {
+				return getType().getNomAttaque().equals(attaque.getType().getNomAttaque());
+			}
+			return false;
+		}
 
 }
