@@ -13,7 +13,12 @@ public class Sabot implements Iterable<Carte> {
     
     public Sabot(Carte[] cartes) {
         this.cartes = cartes;
-        this.nbCartes = cartes.length;
+        this.nbCartes = 0;
+        for (Carte carte : cartes) {
+            if (carte != null) {
+                this.nbCartes++;
+            }
+        }
     }
 
     

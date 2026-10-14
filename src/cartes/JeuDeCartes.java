@@ -66,7 +66,28 @@ public class JeuDeCartes {
 		return toutesLesCartes;
 	}
 	
-	//TP3 Modif.:
+	
+	
+	// TP2 Modif. :
+		private int compterExemplaires(Carte carteRecherchee, Carte[] cartes) {
+			int compteur = 0;
+			for (Carte carte : cartes) {
+				if (carte.equals(carteRecherchee)) {
+					compteur++;
+				}
+			}
+			return compteur;
+		}
+
+		public boolean checkCount() {
+			Carte[] toutesLesCartes = donnerCartes();
+			for (Configuration config : this.typesDeCartes) {
+				if (config != null && compterExemplaires(config.getCarte(), toutesLesCartes) != config.getNbExemplaires()) {
+					return false;
+				}
+			}
+			return true;
+		}
 
 	
 	private static class Configuration {

@@ -22,8 +22,8 @@ public class Borne extends Carte {
 	//TP3 Modif.:
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Borne borne){
-			return km == borne.km;
+		if(super.equals(obj)){
+			return km == ((Borne)obj).getKm();
 		}
 		return false;
 	}
